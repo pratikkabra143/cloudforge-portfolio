@@ -1,0 +1,25 @@
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "CloudForge Backend is running!"
+
+@app.route('/health')
+def health():
+    return jsonify({"status": "ok"})
+
+@app.route('/projects')
+def projects():
+    return jsonify([
+        {
+            "name": "CloudForge Portfolio",
+            "description": "Cloud-native portfolio with CI/CD and cloud hosting",
+            "tech": ["Python","AWS S3", "Flask", "Cloudflare", "GitHub Actions"]
+        }
+    ])
+    
+if __name__ == '__main__':
+    app.run(debug=True)
+    
