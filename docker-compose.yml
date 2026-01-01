@@ -7,6 +7,6 @@ services:
   frontend:
     image: nginx:alpine
     volumes:
-      - ./static-site:/usr/share/nginx/html:ro
+      - ./frontend:/usr/share/nginx/html:ro
     ports:
       - "8080:80"
