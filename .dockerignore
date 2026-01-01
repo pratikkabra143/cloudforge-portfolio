@@ -1,0 +1,23 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env
+
+# Editor / OS
+.vscode/
+.DS_Store
+
+# Frontend (not needed in backend image)
+static-site/
+
+# Node (future-proof)
+node_modules/
