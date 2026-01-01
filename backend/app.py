@@ -25,3 +25,4 @@ def projects():
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000, debug=True)
     
+# Random comment to trigger backend CI workflow
