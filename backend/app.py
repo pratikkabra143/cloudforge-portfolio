@@ -10,7 +10,7 @@ def home():
 
 @app.route('/health')
 def health():
-    return jsonify({"status": "ok"})
+    return jsonify({"status": "ok", "cd": "enabled"})
 
 @app.route('/projects')
 def projects():
@@ -24,5 +24,3 @@ def projects():
     
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000, debug=True)
-    
-# Trigger docker image push ci
