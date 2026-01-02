@@ -1,5 +1,5 @@
 async function loadProjects() {
-  const response = await fetch("http://127.0.0.1:5000/projects");
+  const response = await fetch("https://api.pratikkabra.dev/projects"); // Production API endpoint (CloudForge backend)
   const data = await response.json();
 
   document.getElementById("output").textContent =
