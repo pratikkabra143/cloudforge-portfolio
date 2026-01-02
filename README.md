@@ -74,3 +74,7 @@ Details are documented in `docs/CI_CD.md`.
 - Clear separation of concerns
 - Verifiable automation over hidden complexity
 - Production-aligned patterns
+
+---
+
+See `NOTICE.md` for attribution and authenticity terms.
